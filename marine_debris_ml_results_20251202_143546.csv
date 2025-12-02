@@ -1,0 +1,132 @@
+======================================================================
+MARINE DEBRIS MACHINE LEARNING ANALYSIS - COMPLETE RESULTS
+======================================================================
+
+MODEL PERFORMANCE SUMMARY
+----------------------------------------
+Model,MAE,MSE,RMSE,R2_Score,Accuracy_Percentage,Timestamp,Data_Source
+Random Forest,12.063390548340548,254.25026161658917,15.945226922706029,0.518611288971923,73.42462179548995,20251202_143546,MDMAP_ChineseBellChurch_20251201 (2).csv
+XGBoost,7.2514238357543945,94.4854507446289,9.72036268585843,0.8211045265197754,83.79939552356929,20251202_143546,MDMAP_ChineseBellChurch_20251201 (2).csv
+LSTM,32.486881256103516,1483.4560546875,38.515659863067384,-1.8087246417999268,35.80723356155436,20251202_143546,MDMAP_ChineseBellChurch_20251201 (2).csv
+
+
+DATASET INFORMATION
+----------------------------------------
+Total_Samples,Training_Samples,Test_Samples,Features_Used,Target_Variable,Best_Model,Best_Accuracy,Timestamp
+24,19,5,92,total_debris_items,XGBoost,83.79939552356929,20251202_143546
+
+
+DETAILED PREDICTIONS FOR ALL MODELS
+----------------------------------------
+Model,Sample_Index,Actual_Value,Predicted_Value,Absolute_Error,Percentage_Error
+Random Forest,0,25.0,23.019569805194802,1.9804301948051979,7.921720779220792
+XGBoost,0,25.0,21.5515079498291,3.4484920501708984,13.793968200683594
+LSTM,0,25.0,2.470242500305176,22.529757499694824,90.1190299987793
+Random Forest,1,29.0,30.50636742424242,1.5063674242424199,5.194370428422138
+XGBoost,1,29.0,26.292078018188477,2.7079219818115234,9.337662006246633
+LSTM,1,29.0,3.8917288780212402,25.10827112197876,86.58024524820263
+Random Forest,2,65.0,35.41384523809524,29.58615476190476,45.51716117216117
+XGBoost,2,65.0,50.791500091552734,14.208499908447266,21.85923062838041
+LSTM,2,65.0,6.36840295791626,58.63159704208374,90.20245698782114
+Random Forest,3,62.0,45.32826785714285,16.671732142857152,26.889890552995404
+XGBoost,3,62.0,46.14694595336914,15.85305404663086,25.56944201069494
+LSTM,3,62.0,8.774417877197266,53.225582122802734,85.84771310129473
+Random Forest,4,5.0,15.57226821789322,10.57226821789322,211.44536435786438
+XGBoost,4,5.0,4.960851669311523,0.03914833068847656,0.7829666137695312
+LSTM,4,5.0,2.060800313949585,2.939199686050415,58.7839937210083
+
+
+FEATURES USED IN MODELING
+----------------------------------------
+1. survey_date
+2. beach_width_at_transect
+3. transect_width
+4. site_length
+5. slope
+6. substrate
+7. back_barrier_type
+8. num_people_searching_for_debris
+9. debris_search_start_time
+10. debris_search_end_time
+11. debris_removal_transect
+12. consistency_check
+13. total_plastic_items
+14. total_metal_items
+15. total_glass_items
+16. total_rubber_items
+17. total_processed-lumber_items
+18. total_cloth-fabric_items
+19. total_other_items
+20. plastic:fragments-film
+21. plastic:fragments-foamed
+22. plastic:fragments-hard
+23. plastic:bags
+24. plastic:beverage-bottles
+25. plastic:bottle-or-container-caps
+26. plastic:cups
+27. plastic:food-wrappers
+28. plastic:other-jugs-or-containers
+29. plastic:straws
+30. plastic:utensils
+31. plastic:6-pack-rings
+32. plastic:cigar-tips
+33. plastic:cigarettes
+34. plastic:disposable-cigarette-lighters
+35. plastic:buoys-and-floats
+36. plastic:fishing-lures-and-line
+37. plastic:rope-and-nets
+38. plastic:balloons
+39. plastic:personal-care-products
+40. plastic:other
+41. metal:fragments
+42. metal:aerosol-cans
+43. metal:aluminum-tin-cans
+44. metal:other
+45. glass:fragments
+46. glass:beverage-bottles
+47. glass:jars
+48. glass:other
+49. rubber:fragments
+50. rubber:balloons
+51. rubber:flip-flops
+52. rubber:gloves
+53. rubber:tires
+54. rubber:other
+55. processed-lumber:cardboard-cartons
+56. processed-lumber:building-material
+57. processed-lumber:paper-and-cardboard
+58. processed-lumber:bags
+59. processed-lumber:other
+60. cloth-fabric:fragments
+61. cloth-fabric:clothing-and-shoes
+62. cloth-fabric:gloves
+63. cloth-fabric:rope-and-nets
+64. cloth-fabric:towels-rags
+65. cloth-fabric:other
+66. other:other
+67. weather
+68. trashcans
+69. debris_removal_site
+70. number_of_recreators
+71. team_count
+72. k12_group
+73. first_timers
+74. country
+75. state_province_territory
+76. city_county
+77. site_back_barrier_left_lat
+78. site_back_barrier_left_lon
+79. site_back_barrier_right_lat
+80. site_back_barrier_right_lon
+81. site_waters_edge_left_lat
+82. site_waters_edge_left_lon
+83. site_waters_edge_right_lat
+84. site_waters_edge_right_lon
+85. direction_when_facing_water
+86. access
+87. nearest_river_stream_inlet
+88. nearest_river_dist_km
+89. reason_site_selection
+90. national_survey
+91. region
+92. panel
